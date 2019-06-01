@@ -1,0 +1,62 @@
+{
+    "author":"Chip Pinkston",
+    "bugs":"",
+    "changelog":"",
+    "contributors":[],
+    "dependencies":{
+        "fw1":"^4.2.0"
+    },
+    "description":"",
+    "devDependencies":{
+        "testbox":"^3.0.0+305",
+        "docbox":"^2.2.1+27"
+    },
+    "documentation":"",
+    "homepage":"",
+    "ignore":[],
+    "installPaths":{
+        "testbox":"deployment/lib/testbox",
+        "docbox":"deployment/lib/docbox",
+        "fw1":"deployment/lib/fw1/framework",
+    },
+    "instructions":"",
+    "keywords":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "location":"",
+    "name":"rollout-docker",
+    "private":true,
+    "projectURL":"",
+    "repository":{
+        "type":"",
+        "URL":""
+    },
+    "scripts":{},
+    "shortDescription":"A dockerized CommandBox, FW/1, ColdFusion-Rollout, CFRedis app",
+    "slug":"Feature Flags Mini-App",
+    "testbox":{
+        "bundles":"",
+        "directory":"tests.specs",
+        "labels":"",
+        "options":{},
+        "recurse":true,
+        "reporter":"",
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "testBundles":"",
+        "testSpecs":"",
+        "testSuites":"",
+        "verbose":true,
+        "watchDelay":500,
+        "watchPaths":"**.cfc"
+    },
+    "type":"",
+    "version":"0.0.1"
+}

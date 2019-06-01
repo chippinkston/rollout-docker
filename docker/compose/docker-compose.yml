@@ -1,0 +1,36 @@
+version: "3.6"
+
+services:
+  cfml:
+    build:
+      context: "../image/commandbox"
+    container_name: app
+    ports:
+      - 8080:8080
+      - 8443:8443
+    volumes:
+      - ../../:/app
+
+  # Sessions and Feature Flags
+  redis:
+    image: redis:5-alpine
+    container_name: redis
+    ports:
+      - 6379:6379
+    links:
+     - redis-commander
+
+  # Admin Consoles:
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=redis
+    ports:
+      - 8081:8081
+
+
+
+volumes:
+  log_data:
+  db_data:

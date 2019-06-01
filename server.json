@@ -1,0 +1,8 @@
+{
+    "name":"rolloutApp",
+    "cfconfigfile":"rollout.json",
+    "web":{
+        "host":"127.0.0.1",
+        "webroot":"deployment/www"
+    }
+}
